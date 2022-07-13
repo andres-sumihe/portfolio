@@ -7,7 +7,7 @@ export default function Home(){
         <section id="home" className="flex items-center px-48">
             <div className="welcome-message">
                 <h1 className="welcome-title">Hello.</h1>
-                <h3 className="welcome-content">I'm <span className="name">Andres Sumihe</span></h3>
+                <h3 className="welcome-content">{"I'm"} <span className="name">Andres Sumihe</span></h3>
                 <h4 className="welcome-description">Mobile Develope - Web Developer</h4>
             </div>
 

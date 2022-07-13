@@ -11,7 +11,7 @@ nav {
       height: 4px;
 
       .progress-indicator {
-         width: 50%;
+         width: 0;
          height: 100%;
          background-color: $emerald;
       }
@@ -33,6 +33,10 @@ nav {
       .active {
          color: $emerald;
          transition: .3s all ease-in-out ;
+      }
+
+      li:hover{
+         color: $emerald;
       }
    }
 

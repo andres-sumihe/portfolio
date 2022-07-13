@@ -11,8 +11,9 @@ export default function Header(){
 				d = $(document).height(),
 				c = $(window).height();
 		  
-			var scrollPercent = (s! / (d! - c!)) * 100;
-			$('.progress-indicator').width(scrollPercent + "%");
+			var scrollPercent = (s! / (d! - c!)) * 101;
+			console.log(scrollPercent )
+			$('.progress-indicator').width(Math.round(scrollPercent) + "%");
 		  })
 		var t = $('.nav-item-link');
 		t.each(e => {

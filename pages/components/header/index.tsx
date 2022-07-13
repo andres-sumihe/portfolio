@@ -1,33 +1,33 @@
 import { useEffect } from "react";
-import $ from 'jquery';
+import $ from "jquery";
 import { IoClose } from "react-icons/io5";
-import variabels from '../../../styles/_variables.module.scss';
+import variabels from "../../../styles/_variables.module.scss";
 
 export default function Header(){
 		
 	useEffect(()=> {
-		$(window).on('scroll', function(){
+		$(window).on("scroll", function(){
 			var s = $(window).scrollTop(),
 				d = $(document).height(),
 				c = $(window).height();
 		  
 			var scrollPercent = (s! / (d! - c!)) * 101;
 			console.log(scrollPercent )
-			$('.progress-indicator').width(Math.round(scrollPercent) + "%");
+			$(".progress-indicator").width(Math.round(scrollPercent) + "%");
 		  })
-		var t = $('.nav-item-link');
+		var t = $(".nav-item-link");
 		t.each(e => {
-			t[e].addEventListener('click' ,function(){
-				t.removeClass('active');
-				$(this).addClass('active')
+			t[e].addEventListener("click" ,function(){
+				t.removeClass("active");
+				$(this).addClass("active")
 				
 			});
 		});
-		$('#nav-toggle').on('click', function(){
-			$('#mobile-menu').addClass('active');
+		$("#nav-toggle").on("click", function(){
+			$("#mobile-menu").addClass("active");
 		})
-		$('#close-menu').on('click', function(){
-			$('#mobile-menu').removeClass('active');
+		$("#close-menu").on("click", function(){
+			$("#mobile-menu").removeClass("active");
 		})
 
 	},[])	

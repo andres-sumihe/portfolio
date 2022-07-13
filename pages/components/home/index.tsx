@@ -4,7 +4,7 @@ import variables from '../../../styles/_variables.module.scss';
 export default function Home(){
 
     return (
-        <section id='home' className="flex items-center px-48">
+        <section id="home" className="flex items-center px-48">
             <div className="welcome-message">
                 <h1 className="welcome-title">Hello.</h1>
                 <h3 className="welcome-content">I'm <span className="name">Andres Sumihe</span></h3>

@@ -1,0 +1,55 @@
+nav {
+   &.main {
+      background-color: $charlestonGreen;
+   }
+
+   .reading-indicator {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 4px;
+
+      .progress-indicator {
+         width: 50%;
+         height: 100%;
+         background-color: $emerald;
+      }
+   }
+
+   .title-left {
+      color: $emerald;
+
+      span {
+         color: $emerald;
+      }
+   }
+   
+   #nav-content {
+      li {
+         color: $aliceBlue;
+         font-size: medium;
+      }
+      .active {
+         color: $emerald;
+         transition: .3s all ease-in-out ;
+      }
+   }
+
+   #mobile-menu {
+      position: absolute;
+      top: 0;
+      right: -100vw;
+      width: 100vw;
+      height: 100vh;
+      z-index: 1000;
+      background-color: $charlestonGreen;
+      opacity: .95;
+      transition: linear .5s;
+      &.active {
+         right: 0;
+         transition: linear .51s;
+      }
+   }
+
+}

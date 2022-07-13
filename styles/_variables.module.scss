@@ -1,22 +1,22 @@
 /* SCSS HEX */
-$charleston-green: #272d2dff;
-$heliotrope-gray: #a39ba8ff;
-$light-steel-blue: #b8c5d6ff;
-$alice-blue: #edf5fcff;
+$charlestonGreen: #272d2dff;
+$heliotropeGray: #a39ba8ff;
+$lightSteelBlue: #b8c5d6ff;
+$aliceBlue: #edf5fcff;
 $emerald: #23ce6bff;
 
 /* SCSS HSL */
-$charleston-green: hsla(180, 7%, 16%, 1);
-$heliotrope-gray: hsla(277, 7%, 63%, 1);
-$light-steel-blue: hsla(214, 27%, 78%, 1);
-$alice-blue: hsla(208, 71%, 96%, 1);
+$charlestonGreen: hsla(180, 7%, 16%, 1);
+$heliotropeGray: hsla(277, 7%, 63%, 1);
+$lightSteelBlue: hsla(214, 27%, 78%, 1);
+$aliceBlue: hsla(208, 71%, 96%, 1);
 $emerald: hsla(145, 71%, 47%, 1);
 
 /* SCSS RGB */
-$charleston-green: rgba(39, 45, 45, 1);
-$heliotrope-gray: rgba(163, 155, 168, 1);
-$light-steel-blue: rgba(184, 197, 214, 1);
-$alice-blue: rgba(237, 245, 252, 1);
+$charlestonGreen: rgba(39, 45, 45, 1);
+$heliotropeGray: rgba(163, 155, 168, 1);
+$lightSteelBlue: rgba(184, 197, 214, 1);
+$aliceBlue: rgba(237, 245, 252, 1);
 $emerald: rgba(35, 206, 107, 1);
 
 /* SCSS Gradient */
@@ -32,9 +32,9 @@ $gradient-radial: radial-gradient(#272d2dff, #a39ba8ff, #b8c5d6ff, #edf5fcff, #2
 
 
 :export {
-    charlestonGreen: $charleston-green;
-    heliotropeGray: $heliotrope-gray;
-    lightSteelBlue: $light-steel-blue;
-    aliceBlue: $alice-blue;
+    charlestonGreen: $charlestonGreen;
+    heliotropeGray: $heliotropeGray;
+    lightSteelBlue: $lightSteelBlue;
+    aliceBlue: $aliceBlue;
     emerald: $emerald;
 }

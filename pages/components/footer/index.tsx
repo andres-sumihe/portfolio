@@ -1,5 +1,5 @@
 import { FaBeer, FaHeart } from 'react-icons/fa'
-import variabels from '../../../styles/variables.module.scss';
+import variabels from '../../../styles/_variables.module.scss';
 
 const Footer = (props: any) => {
     const styles = props.styles;

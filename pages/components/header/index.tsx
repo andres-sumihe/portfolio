@@ -12,14 +12,22 @@ export default function Header(){
 				c = $(window).height();
 		  
 			var scrollPercent = (s! / (d! - c!)) * 101;
-			console.log(scrollPercent )
 			$(".progress-indicator").width(Math.round(scrollPercent) + "%");
 		  })
 		var t = $(".nav-item-link");
 		t.each(e => {
-			t[e].addEventListener("click" ,function(){
+			t[e].addEventListener("click" ,function(x){
 				t.removeClass("active");
 				$(this).addClass("active")
+
+				let hashval = t[e].getAttribute('href')
+				let target = document.getElementById(hashval!.replace('#',''))
+				target!.scrollIntoView({
+					behavior: 'smooth',
+					block: 'start'
+				})
+				history.pushState(null, '', hashval)
+				x.preventDefault()
 				
 			});
 		});
@@ -52,19 +60,19 @@ export default function Header(){
 		<div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden pt-6 lg:pt-0" id="nav-content">
 			<ul className="list-reset lg:flex justify-end flex-1 items-center">
 				<li className="mr-3">
-					<a className="inline-block nav-item-link py-2 px-4 no-underline" href="#">Home</a>
+					<a className="inline-block nav-item-link py-2 px-4 no-underline" href="#home">Home</a>
 				</li>
 				<li className="mr-3">
-					<a className="inline-block nav-item-link no-underline hover:text-underline py-2 px-4" href="#">About</a>
+					<a className="inline-block nav-item-link no-underline hover:text-underline py-2 px-4" href="#about">About</a>
 				</li>
 				<li className="mr-3">
-					<a className="inline-block nav-item-link no-underline hover:text-underline py-2 px-4" href="#">Resume</a>
+					<a className="inline-block nav-item-link no-underline hover:text-underline py-2 px-4" href="#resume">Resume</a>
 				</li>
 				<li className="mr-3">
-					<a className="inline-block nav-item-link no-underline hover:text-underline py-2 px-4" href="#">Portfolio</a>
+					<a className="inline-block nav-item-link no-underline hover:text-underline py-2 px-4" href="#portfolio">Portfolio</a>
 				</li>
 				<li className="mr-3">
-					<a className="inline-block nav-item-link no-underline hover:text-underline py-2 px-4" href="#">Portfolio</a>
+					<a className="inline-block nav-item-link no-underline hover:text-underline py-2 px-4" href="#contact">Contact</a>
 				</li>
 			</ul>
 		</div>

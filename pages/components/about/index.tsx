@@ -1,7 +1,7 @@
 import { FaSuperpowers } from "react-icons/fa"
 import variabels from "../../../styles/_variables.module.scss";
 
-export default function () {
+export default function about() {
     return (
         <section id="about">
             <div className="section-head">

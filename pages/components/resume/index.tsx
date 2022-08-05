@@ -1,6 +1,6 @@
 import { FaSuperpowers } from "react-icons/fa";
 import variabels from "../../../styles/_variables.module.scss";
-import {educations, experiences, hardSkills, softSkills} from "../../data";
+import {educations, experiences, hardSkills, softSkills} from "../../../data";
 
 
 function Resume() {

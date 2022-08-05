@@ -1,6 +1,6 @@
 import { FaSuperpowers } from "react-icons/fa";
 import variabels from "../../../styles/_variables.module.scss";
-import data from "../../data";
+import {educations, experiences, hardSkills, softSkills} from "../../data";
 
 
 function Resume() {
@@ -18,7 +18,7 @@ function Resume() {
                             <h5 className="title">SOFT SKILLS</h5>
                         </li>
                         <li className="skill-body">
-                            {data.softSkills.map((skill, key) =>
+                            {softSkills.map((skill, key) =>
                                 <div className="single-skill" key={key}>
                                     <div className="skill-name">
                                         <FaSuperpowers color={variabels.emerald} />
@@ -39,7 +39,7 @@ function Resume() {
                             <h5 className="title">HARD SKILLS</h5>
                         </li>
                         <li className="skill-body">
-                            {data.hardSkills.map((skill, key) =>
+                            {hardSkills.map((skill, key) =>
                                 <div className="single-skill" key={key}>
                                     <div className="skill-name">
                                         <FaSuperpowers color={variabels.emerald} />
@@ -64,7 +64,7 @@ function Resume() {
                 </div>
 
                 <div className="experiences-wrapper">
-                    {data.experiences.map((experience, key) =>
+                    {experiences.map((experience, key) =>
                         <div className="single-experience" key={key}>
                             <div className="job-title">{experience.jobTitle}</div>
                             <div className="date">{experience.date}</div>
@@ -91,7 +91,7 @@ function Resume() {
                 </div>
 
                 <div className="educations-wrapper">
-                    {data.educations.map((educations, key) =>
+                    {educations.map((educations, key) =>
                         <div className="single-education" key={key}>
                             <div className="title">{educations.title}</div>
                             <div className="date">{educations.date}</div>

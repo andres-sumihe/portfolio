@@ -18,9 +18,8 @@ function Resume() {
                             <h5 className="title">SOFT SKILLS</h5>
                         </li>
                         <li className="skill-body">
-                            {data.softSkills.map(skill =>
-
-                                <div className="single-skill">
+                            {data.softSkills.map((skill, key) =>
+                                <div className="single-skill" key={key}>
                                     <div className="skill-name">
                                         <FaSuperpowers color={variabels.emerald} />
                                         <span>{skill.name}</span>
@@ -66,8 +65,8 @@ function Resume() {
                 </div>
 
                 <div className="experiences-wrapper">
-                    {data.experiences.map(experience =>
-                        <div className="single-experience">
+                    {data.experiences.map((experience, key) =>
+                        <div className="single-experience" key={key}>
                             <div className="job-title">{experience.jobTitle}</div>
                             <div className="date">{experience.date}</div>
                             <div className="organization">
@@ -76,8 +75,8 @@ function Resume() {
                             </div>
                             <div className="desc">
                                 <ul>
-                                    {experience.desc.map(decsItem =>
-                                        <li>{decsItem}</li>
+                                    {experience.desc.map((decsItem, key) =>
+                                        <li key={key}>{decsItem}</li>
                                     )}
                                 </ul>
                             </div>
@@ -93,8 +92,8 @@ function Resume() {
                 </div>
 
                 <div className="educations-wrapper">
-                    {data.educations.map(educations =>
-                        <div className="single-education">
+                    {data.educations.map((educations, key) =>
+                        <div className="single-education" key={key}>
                             <div className="title">{educations.title}</div>
                             <div className="date">{educations.date}</div>
                             <div className="university">

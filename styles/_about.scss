@@ -79,13 +79,48 @@
                     }
                 }
 
+                .social-media {
+                    display: flex;
+                    gap: 10px;
+                    flex-direction: row;
+                    margin-bottom: 10px;
+                    .single-social-media {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 48px;
+                        height: 48px;
+                        border-radius: 100%;
+                        border: 1px $emerald solid;
+                    }
+                }
+
                 .more {
                     flex-grow: 1;
+                    display: flex;
+                    justify-content: center;
                     padding: 20px 20px;
                     background-color: rgba(163, 155, 168, .1);
                     max-width: 90%;
                     border-left: 5px $heliotropeGray solid;
                     color: $aliceBlue;
+
+                    .more-content {
+                        .count {
+                            font-size: 24px;
+                            color: rgba(237, 245, 252, .5);
+                        }
+
+                        .desc {
+                            display: flex;
+                            gap: 10px;
+                            flex-direction: row;
+                            align-items: center;
+                            span {
+                                font-weight: bolder;
+                            }
+                        }
+                    }
                 }
             }
 

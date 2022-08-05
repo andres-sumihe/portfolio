@@ -1,4 +1,4 @@
-import { FaSuperpowers } from "react-icons/fa"
+import { FaBusinessTime, FaFacebook, FaGithub, FaHandshake, FaInstagram, FaLinkedin, FaSuperpowers } from "react-icons/fa"
 import variabels from "../../../styles/_variables.module.scss";
 
 export default function about() {
@@ -84,9 +84,49 @@ export default function about() {
                                 </li>
                             </ul>
                         </div>
-
-                        <div className="more">
-                            
+                        <div className="social-media">
+                            <div className="single-social-media">
+                                <a href="https://www.facebook.com/andres.sumihe.1" target="_blank">
+                                    <FaFacebook size={24} color={variabels.emerald}/>
+                                </a>
+                            </div>
+                            <div className="single-social-media">
+                                <a href="https://www.instagram.com/andres_sumihe/" target="_blank">
+                                    <FaInstagram size={24} color={variabels.emerald}/>
+                                </a>
+                            </div>
+                            <div className="single-social-media">
+                                <a href="https://www.linkedin.com/in/andres-sumihe/" target="_blank">
+                                    <FaLinkedin size={24} color={variabels.emerald}/>
+                                </a>
+                            </div>
+                            <div className="single-social-media">
+                                <a href="https://www.github.com/andres-sumihe" target="_blank">
+                                    <FaGithub size={24} color={variabels.emerald}/>
+                                </a>
+                            </div>
+                        </div>
+                        <div className="more flex flex-col gap-5">
+                            <div className="more-content flex flex-col items-center">
+                                <div className="icon">
+                                    <FaBusinessTime size={64} color={variabels.emerald}/>
+                                </div>
+                                <div className="count">3</div>
+                                <div className="desc">
+                                    <FaSuperpowers color={variabels.emerald}/>
+                                    <span>YEARS EXPERIENCE</span>
+                                </div>
+                            </div>
+                            <div className="more-content flex flex-col items-center">
+                                <div className="icon">
+                                    <FaHandshake size={64} color={variabels.emerald}/>
+                                </div>
+                                <div className="count">6</div>
+                                <div className="desc">
+                                    <FaSuperpowers color={variabels.emerald}/>
+                                    <span>PROJECTS DONE</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="right w-full md:w-1/2">
@@ -94,8 +134,8 @@ export default function about() {
                             <img src={'/images/profile.jpg'} />
                         </div>
                         <div className="button-wrapper">
-                            <a href="" className="stack-button"><span>Download CV</span></a>
-                            <a href="" className="stack-button"><span>Contact Me</span></a>
+                            <a href="/resume/Resume_AndresSumihe.pdf" className="stack-button"><span>Download CV</span></a>
+                            <a href="https://wa.me/6285156005454" target={'_blank'} className="stack-button"><span>Contact Me</span></a>
                         </div>
                     </div>
                 </div>

@@ -97,4 +97,4 @@ const educations = [
         gpa: '3.7'
     }
 ]
-export default {softSkills, hardSkills, experiences, educations}
+export {softSkills, hardSkills, experiences, educations}

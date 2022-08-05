@@ -39,9 +39,8 @@ function Resume() {
                             <h5 className="title">HARD SKILLS</h5>
                         </li>
                         <li className="skill-body">
-                            {data.hardSkills.map(skill =>
-
-                                <div className="single-skill">
+                            {data.hardSkills.map((skill, key) =>
+                                <div className="single-skill" key={key}>
                                     <div className="skill-name">
                                         <FaSuperpowers color={variabels.emerald} />
                                         <span>{skill.name}</span>

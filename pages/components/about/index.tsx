@@ -86,22 +86,22 @@ export default function about() {
                         </div>
                         <div className="social-media">
                             <div className="single-social-media">
-                                <a href="https://www.facebook.com/andres.sumihe.1" target="_blank">
+                                <a href="https://www.facebook.com/andres.sumihe.1" target="_blank" rel="noreferrer">
                                     <FaFacebook size={24} color={variabels.emerald}/>
                                 </a>
                             </div>
                             <div className="single-social-media">
-                                <a href="https://www.instagram.com/andres_sumihe/" target="_blank">
+                                <a href="https://www.instagram.com/andres_sumihe/" target="_blank" rel="noreferrer">
                                     <FaInstagram size={24} color={variabels.emerald}/>
                                 </a>
                             </div>
                             <div className="single-social-media">
-                                <a href="https://www.linkedin.com/in/andres-sumihe/" target="_blank">
+                                <a href="https://www.linkedin.com/in/andres-sumihe/" target="_blank" rel="noreferrer">
                                     <FaLinkedin size={24} color={variabels.emerald}/>
                                 </a>
                             </div>
                             <div className="single-social-media">
-                                <a href="https://www.github.com/andres-sumihe" target="_blank">
+                                <a href="https://www.github.com/andres-sumihe" target="_blank" rel="noreferrer">
                                     <FaGithub size={24} color={variabels.emerald}/>
                                 </a>
                             </div>
@@ -135,7 +135,7 @@ export default function about() {
                         </div>
                         <div className="button-wrapper">
                             <a href="/resume/Resume_AndresSumihe.pdf" className="stack-button"><span>Download CV</span></a>
-                            <a href="https://wa.me/6285156005454" target={'_blank'} className="stack-button"><span>Contact Me</span></a>
+                            <a href="https://wa.me/6285156005454" target="_blank" rel="noreferrer" className="stack-button"><span>Contact Me</span></a>
                         </div>
                     </div>
                 </div>

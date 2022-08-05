@@ -1,0 +1,397 @@
+#resume {
+    min-height: 100vh;
+    padding: 50px 10vw;
+
+    .section-head {
+        .section-title {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 2rem;
+            color: $aliceBlue;
+            float: right;
+
+            @media screen and (max-width: 720px) {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    .skills {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+
+        .wrapper {
+            width: 50%;
+            padding: 20px 20px;
+            background-color: rgba(163, 155, 168, .1);
+            border-bottom: 5px $heliotropeGray solid;
+            margin-bottom: 45px;
+
+
+            .skill-head {
+                text-align: center;
+                padding: 45px 30px 40px;
+
+                .title {
+                    text-transform: uppercase;
+                    line-height: 1.3;
+                    display: inline-block;
+                    position: relative;
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+                    color: $emerald;
+                    font-weight: 900;
+                    font-size: 1.333em;
+
+                    &::before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 50%;
+                        height: 3px;
+                        background: $aliceBlue;
+                    }
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        width: 50%;
+                        height: 3px;
+                        background: $aliceBlue;
+                    }
+                }
+
+            }
+
+            .skill-body {
+                .single-skill {
+                    position: relative;
+                    margin-bottom: 21px;
+                    color: $aliceBlue;
+
+                    .skill-name {
+                        margin-bottom: 10px;
+                        text-transform: uppercase;
+                        padding-right: 45px;
+                        line-height: 1.3;
+                        display: inline-flex;
+                        gap: 10px;
+                        align-items: center;
+                    }
+
+                    .percentage {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        line-height: 1.3;
+
+                        &::after {
+                            content: '%';
+                        }
+                    }
+
+                    .progress-wrapper {
+                        background: $aliceBlue;
+                        height: 8px;
+
+                        .progress {
+                            border-radius: 0;
+                            width: 0;
+                            display: block;
+                            height: 100%;
+                            background: $emerald;
+                            transition: width 2s linear;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        @media screen and (max-width: 560px) {
+            flex-direction: column;
+            gap: 0;
+            margin-right: 0;
+            margin-left: 0;
+
+            .wrapper {
+                width: 100%;
+            }
+        }
+    }
+
+    .experiences {
+
+        .header {
+            text-align: center;
+            margin-bottom: 45px;
+
+            .header-title {
+                h5 {
+                    text-transform: uppercase;
+                    line-height: 1.3;
+                    display: inline-block;
+                    position: relative;
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+                    color: $emerald;
+                    font-weight: 900;
+                    font-size: 1.333em;
+
+                    &::before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 50%;
+                        height: 3px;
+                        background: $aliceBlue;
+                    }
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        width: 50%;
+                        height: 3px;
+                        background: $aliceBlue;
+                    }
+                }
+            }
+        }
+
+        .experiences-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 100%;
+            gap: 5%;
+
+            .single-experience {
+                flex: 1 0 47.5%;
+                padding: 20px 20px;
+                background-color: rgba(163, 155, 168, .1);
+                border-bottom: 5px $heliotropeGray solid;
+                margin-bottom: 45px;
+
+                .job-title {
+                    display: block;
+                    margin-bottom: 10px;
+                    color: $emerald;
+                }
+
+                .date {
+                    margin-bottom: 11px;
+                    font-size: 0.85em;
+                    display: inline-block;
+                    letter-spacing: 0.05em;
+                    padding: 6px 10px;
+                    color: $aliceBlue;
+                    background: rgba(255, 255, 255, 0.075);
+                }
+
+                .organization {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    color: $aliceBlue;
+                    gap: 10px;
+                    text-transform: uppercase;
+                    margin-bottom: 28px;
+                }
+
+                .desc {
+                    ul {
+                        li {
+                            list-style-type: disc;
+                            list-style-position: inside;
+                            line-height: 2;
+                            color: #999;
+                            text-align: justify;
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 560px) {
+                .single-experience {
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+
+    .educations {
+
+        .header {
+            text-align: center;
+            margin-bottom: 45px;
+
+            .header-title {
+                h5 {
+                    text-transform: uppercase;
+                    line-height: 1.3;
+                    display: inline-block;
+                    position: relative;
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+                    color: $emerald;
+                    font-weight: 900;
+                    font-size: 1.333em;
+
+                    &::before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 50%;
+                        height: 3px;
+                        background: $aliceBlue;
+                    }
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        width: 50%;
+                        height: 3px;
+                        background: $aliceBlue;
+                    }
+                }
+            }
+        }
+
+        .educations-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 100%;
+            gap: 5%;
+
+            .single-education {
+                flex: 1 0 47.5%;
+                padding: 20px 20px;
+                background-color: rgba(163, 155, 168, .1);
+                border-bottom: 5px $heliotropeGray solid;
+                margin-bottom: 45px;
+
+                .title {
+                    display: block;
+                    margin-bottom: 10px;
+                    color: $emerald;
+                }
+
+                .date {
+                    margin-bottom: 11px;
+                    font-size: 0.85em;
+                    display: inline-block;
+                    letter-spacing: 0.05em;
+                    padding: 6px 10px;
+                    color: $aliceBlue;
+                    background: rgba(255, 255, 255, 0.075);
+                }
+
+                .university {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    color: $aliceBlue;
+                    gap: 10px;
+                    text-transform: uppercase;
+                    margin-bottom: 28px;
+                }
+            }
+
+            @media screen and (max-width: 560px) {
+                .single-education {
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+
+    .download-resume-wrapper {
+        padding-right: 6px;
+        text-align: center;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        .stack-button {
+            display: block;
+            width: 30%;
+            padding: 17px 30px;
+            position: relative;
+            border: solid 1px $emerald;
+            font-weight: 500;
+            line-height: 1;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
+            color: $aliceBlue;
+    
+            span {
+                left: 0.5em;
+                top: -0.5em;
+                z-index: 2;
+                display: inline-block;
+                position: relative;
+                -webkit-transition: left 150ms ease-out, top 150ms ease-out;
+                -moz-transition: left 150ms ease-out, top 150ms ease-out;
+                -o-transition: left 150ms ease-out, top 150ms ease-out;
+                transition: left 150ms ease-out, top 150ms ease-out;
+            }
+    
+            &:after {
+                content: "";
+                background-color: $charlestonGreen;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0.5em;
+                top: -0.5em;
+                -webkit-border-radius: 2px;
+                -moz-border-radius: 2px;
+                border-radius: 2px;
+                border: solid 1px $emerald;
+                z-index: 1;
+                -webkit-transition: left 150ms ease-out, top 150ms ease-out;
+                -moz-transition: left 150ms ease-out, top 150ms ease-out;
+                -o-transition: left 150ms ease-out, top 150ms ease-out;
+                transition: left 150ms ease-out, top 150ms ease-out;
+    
+            }
+    
+            &:hover {
+                &:after {
+                    left: 0.25em;
+                    top: -.25em;
+                }
+    
+                span {
+                    left: 0.25em;
+                    top: -.25em;
+                }
+            }
+    
+            @media screen and (max-width: 720px) {
+                width: 100%;
+            }
+        }
+    }
+}

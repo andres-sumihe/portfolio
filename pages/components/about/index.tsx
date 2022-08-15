@@ -12,8 +12,8 @@ export default function about() {
                 <div className="biography">
                     {"I have a good motivation for progress and growth, eager to learn new things, and can work as an individual or in a team. In my spare time, I like reading books, doing some projects related to software development, and I also learning Web Development and Mobile Development."}
                 </div>
-                <div className="detail flex flex-col-reverse md:flex-row w-full my-10">
-                    <div className="left w-full md:w-1/2">
+                <div className="detail flex flex-col-reverse md:flex-row w-full my-10 gap-5">
+                    <div className="left w-full md:w-2/3 2xl:w-1/2">
                         <div className="detail-info-wrapper">
                             <ul className="column">
                                 <li>
@@ -129,8 +129,8 @@ export default function about() {
                             </div>
                         </div>
                     </div>
-                    <div className="right w-full md:w-1/2">
-                        <div className="profile-picture">
+                    <div className="right w-full md:w-1/3 2xl:w-1/2">
+                        <div className="profile-picture w-full overflow-hidden">
                             <img src={'/images/profile.jpg'} />
                         </div>
                         <div className="button-wrapper">

@@ -64,7 +64,7 @@ export default function about() {
                                         <span>Email</span>
                                     </span>
                                     <span className="dash">-</span>
-                                    <span className="value">asumihe@gmail.com</span>
+                                    <span className="value">asumihe14@gmail.com</span>
                                 </li>
                                 <li>
                                     <span className="label">
@@ -111,7 +111,7 @@ export default function about() {
                                 <div className="icon">
                                     <FaBusinessTime size={64} color={variabels.emerald}/>
                                 </div>
-                                <div className="count">3</div>
+                                <div className="count">5</div>
                                 <div className="desc">
                                     <FaSuperpowers color={variabels.emerald}/>
                                     <span>YEARS EXPERIENCE</span>
@@ -121,7 +121,7 @@ export default function about() {
                                 <div className="icon">
                                     <FaHandshake size={64} color={variabels.emerald}/>
                                 </div>
-                                <div className="count">6</div>
+                                <div className="count">8</div>
                                 <div className="desc">
                                     <FaSuperpowers color={variabels.emerald}/>
                                     <span>PROJECTS DONE</span>

@@ -67,12 +67,12 @@ const experiences = [
         ]
     },
     {
-        jobTitle: 'Mobile Developer Intern',
+        jobTitle: 'Web Developer',
         date:'Jul 2019 - Present',
         organization: 'Arisan Security Salatiga',
         desc: [
             `Contributing as an active member; write and review blog article for blog.arisansecurity.id.`,
-            `Working on web (arisansecurity.id) migration from Wordpress to Gatsby.js (since 2021).`,
+            `Working on web (arisansecurity.id) migration from Wordpress to Next.js (since 2021).`,
             `Manage testing, bugs fixing, and deployment to netlify.`
         ]
     },

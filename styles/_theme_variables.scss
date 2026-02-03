@@ -29,12 +29,3 @@ $gradient-bottom-right: linear-gradient(135deg, #272d2dff, #a39ba8ff, #b8c5d6ff,
 $gradient-top-left: linear-gradient(225deg, #272d2dff, #a39ba8ff, #b8c5d6ff, #edf5fcff, #23ce6bff);
 $gradient-bottom-left: linear-gradient(315deg, #272d2dff, #a39ba8ff, #b8c5d6ff, #edf5fcff, #23ce6bff);
 $gradient-radial: radial-gradient(#272d2dff, #a39ba8ff, #b8c5d6ff, #edf5fcff, #23ce6bff);
-
-
-:export {
-    charlestonGreen: $charlestonGreen;
-    heliotropeGray: $heliotropeGray;
-    lightSteelBlue: $lightSteelBlue;
-    aliceBlue: $aliceBlue;
-    emerald: $emerald;
-}

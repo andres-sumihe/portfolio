@@ -1,6 +1,6 @@
 import { FaSuperpowers } from "react-icons/fa";
-import variabels from "../../../styles/_variables.module.scss";
-import {educations, experiences, hardSkills, softSkills} from "../../../data";
+import variabels from "../../../styles/variables.module.scss";
+import { educations, experiences, hardSkills, softSkills } from "../../../data";
 
 
 function Resume() {
@@ -106,9 +106,9 @@ function Resume() {
             <div className="download-resume-wrapper">
                 <a href="/resume/Resume_AndresSumihe.pdf" className="stack-button"><span>Download CV</span></a>
             </div>
-                            
+
         </section>
-    )
+    );
 }
 
 export default Resume;

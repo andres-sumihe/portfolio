@@ -1,5 +1,5 @@
-import { FaBusinessTime, FaFacebook, FaGithub, FaHandshake, FaInstagram, FaLinkedin, FaSuperpowers } from "react-icons/fa"
-import variabels from "../../../styles/_variables.module.scss";
+import { FaBusinessTime, FaFacebook, FaGithub, FaHandshake, FaInstagram, FaLinkedin, FaSuperpowers } from "react-icons/fa";
+import variabels from "../../../styles/variables.module.scss";
 
 export default function about() {
     return (
@@ -18,7 +18,7 @@ export default function about() {
                             <ul className="column">
                                 <li>
                                     <span className="label">
-                                        <FaSuperpowers color={variabels.emerald}/>
+                                        <FaSuperpowers color={variabels.emerald} />
                                         <span>First Name</span>
                                     </span>
                                     <span className="dash">-</span>
@@ -26,7 +26,7 @@ export default function about() {
                                 </li>
                                 <li>
                                     <span className="label">
-                                        <FaSuperpowers color={variabels.emerald}/>
+                                        <FaSuperpowers color={variabels.emerald} />
                                         <span>Last Name</span>
                                     </span>
                                     <span className="dash">-</span>
@@ -34,7 +34,7 @@ export default function about() {
                                 </li>
                                 <li>
                                     <span className="label">
-                                        <FaSuperpowers color={variabels.emerald}/>
+                                        <FaSuperpowers color={variabels.emerald} />
                                         <span>Date of Birth</span>
                                     </span>
                                     <span className="dash">-</span>
@@ -42,7 +42,7 @@ export default function about() {
                                 </li>
                                 <li>
                                     <span className="label">
-                                        <FaSuperpowers color={variabels.emerald}/>
+                                        <FaSuperpowers color={variabels.emerald} />
                                         <span>Nationality</span>
                                     </span>
                                     <span className="dash">-</span>
@@ -52,7 +52,7 @@ export default function about() {
                             <ul className="column">
                                 <li>
                                     <span className="label">
-                                        <FaSuperpowers color={variabels.emerald}/>
+                                        <FaSuperpowers color={variabels.emerald} />
                                         <span>Phone</span>
                                     </span>
                                     <span className="dash">-</span>
@@ -60,7 +60,7 @@ export default function about() {
                                 </li>
                                 <li>
                                     <span className="label">
-                                        <FaSuperpowers color={variabels.emerald}/>
+                                        <FaSuperpowers color={variabels.emerald} />
                                         <span>Email</span>
                                     </span>
                                     <span className="dash">-</span>
@@ -68,7 +68,7 @@ export default function about() {
                                 </li>
                                 <li>
                                     <span className="label">
-                                        <FaSuperpowers color={variabels.emerald}/>
+                                        <FaSuperpowers color={variabels.emerald} />
                                         <span>Address</span>
                                     </span>
                                     <span className="dash">-</span>
@@ -76,7 +76,7 @@ export default function about() {
                                 </li>
                                 <li>
                                     <span className="label">
-                                        <FaSuperpowers color={variabels.emerald}/>
+                                        <FaSuperpowers color={variabels.emerald} />
                                         <span>Languages</span>
                                     </span>
                                     <span className="dash">-</span>
@@ -87,43 +87,43 @@ export default function about() {
                         <div className="social-media">
                             <div className="single-social-media">
                                 <a href="https://www.facebook.com/andres.sumihe.1" target="_blank" rel="noreferrer">
-                                    <FaFacebook size={24} color={variabels.emerald}/>
+                                    <FaFacebook size={24} color={variabels.emerald} />
                                 </a>
                             </div>
                             <div className="single-social-media">
                                 <a href="https://www.instagram.com/andres_sumihe/" target="_blank" rel="noreferrer">
-                                    <FaInstagram size={24} color={variabels.emerald}/>
+                                    <FaInstagram size={24} color={variabels.emerald} />
                                 </a>
                             </div>
                             <div className="single-social-media">
                                 <a href="https://www.linkedin.com/in/andres-sumihe/" target="_blank" rel="noreferrer">
-                                    <FaLinkedin size={24} color={variabels.emerald}/>
+                                    <FaLinkedin size={24} color={variabels.emerald} />
                                 </a>
                             </div>
                             <div className="single-social-media">
                                 <a href="https://www.github.com/andres-sumihe" target="_blank" rel="noreferrer">
-                                    <FaGithub size={24} color={variabels.emerald}/>
+                                    <FaGithub size={24} color={variabels.emerald} />
                                 </a>
                             </div>
                         </div>
                         <div className="more flex flex-col gap-5">
                             <div className="more-content flex flex-col items-center">
                                 <div className="icon">
-                                    <FaBusinessTime size={64} color={variabels.emerald}/>
+                                    <FaBusinessTime size={64} color={variabels.emerald} />
                                 </div>
                                 <div className="count">5</div>
                                 <div className="desc">
-                                    <FaSuperpowers color={variabels.emerald}/>
+                                    <FaSuperpowers color={variabels.emerald} />
                                     <span>YEARS EXPERIENCE</span>
                                 </div>
                             </div>
                             <div className="more-content flex flex-col items-center">
                                 <div className="icon">
-                                    <FaHandshake size={64} color={variabels.emerald}/>
+                                    <FaHandshake size={64} color={variabels.emerald} />
                                 </div>
                                 <div className="count">8</div>
                                 <div className="desc">
-                                    <FaSuperpowers color={variabels.emerald}/>
+                                    <FaSuperpowers color={variabels.emerald} />
                                     <span>PROJECTS DONE</span>
                                 </div>
                             </div>
@@ -141,5 +141,5 @@ export default function about() {
                 </div>
             </div>
         </section>
-    )
+    );
 }

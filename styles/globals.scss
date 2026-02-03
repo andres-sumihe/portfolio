@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import './variables.module.scss';
+@import 'theme_variables';
 @import 'header';
 @import 'home';
 @import 'footer';

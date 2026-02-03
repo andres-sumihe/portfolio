@@ -1,7 +1,7 @@
 import { CgScrollV } from "react-icons/cg";
-import variables from '../../../styles/_variables.module.scss';
+import variables from "../../../styles/variables.module.scss";
 
-export default function Home(){
+export default function Home() {
 
     return (
         <section id="home" className="flex flex-1 items-center justify-center px-10 md:px-36 lg:px-48">
@@ -16,5 +16,5 @@ export default function Home(){
             </div>
 
         </section>
-    )
+    );
 }

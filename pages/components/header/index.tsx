@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import $ from "jquery";
 import { IoClose } from "react-icons/io5";
-import variabels from "../../../styles/variables.module.scss";
+import { colors } from "../../../data/colors";
 
 export default function Header() {
 
@@ -77,7 +77,7 @@ export default function Header() {
 				</ul>
 			</div>
 			<div id="mobile-menu">
-				<button id="close-menu" className="absolute right-8 top-8"><IoClose size={36} color={variabels.aliceBlue} /></button>
+				<button id="close-menu" className="absolute right-8 top-8"><IoClose size={36} color={colors.aliceBlue} /></button>
 			</div>
 		</nav>
 	);

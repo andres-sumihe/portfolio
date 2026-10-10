@@ -1,0 +1,17 @@
+/* CSS Custom Properties - Theme Colors */
+:root {
+  /* Primary Colors */
+  --charleston-green: #272d2d;
+  --heliotrope-gray: #a39ba8;
+  --light-steel-blue: #b8c5d6;
+  --alice-blue: #edf5fc;
+  --emerald: #23ce6b;
+
+  /* Semi-transparent variants */
+  --heliotrope-gray-10: rgba(163, 155, 168, 0.1);
+  --alice-blue-50: rgba(237, 245, 252, 0.5);
+  --white-7: rgba(255, 255, 255, 0.075);
+
+  /* Breakpoints (for reference in media queries) */
+  /* Small: 360px, Medium: 720px, Large: 560px */
+}

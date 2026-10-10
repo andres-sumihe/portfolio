@@ -1,5 +1,5 @@
 import { FaSuperpowers } from "react-icons/fa";
-import variabels from "../../../styles/variables.module.scss";
+import { colors } from "../../../data/colors";
 import { educations, experiences, hardSkills, softSkills } from "../../../data";
 
 
@@ -21,7 +21,7 @@ function Resume() {
                             {softSkills.map((skill, key) =>
                                 <div className="single-skill" key={key}>
                                     <div className="skill-name">
-                                        <FaSuperpowers color={variabels.emerald} />
+                                        <FaSuperpowers color={colors.emerald} />
                                         <span>{skill.name}</span>
                                     </div>
                                     <div className="percentage" data-percent={skill.percent}>{skill.percent}</div>
@@ -42,7 +42,7 @@ function Resume() {
                             {hardSkills.map((skill, key) =>
                                 <div className="single-skill" key={key}>
                                     <div className="skill-name">
-                                        <FaSuperpowers color={variabels.emerald} />
+                                        <FaSuperpowers color={colors.emerald} />
                                         <span>{skill.name}</span>
                                     </div>
                                     <div className="percentage" data-percent={skill.percent}>{skill.percent}</div>
@@ -69,7 +69,7 @@ function Resume() {
                             <div className="job-title">{experience.jobTitle}</div>
                             <div className="date">{experience.date}</div>
                             <div className="organization">
-                                <FaSuperpowers color={variabels.emerald} />
+                                <FaSuperpowers color={colors.emerald} />
                                 <span>{experience.organization}</span>
                             </div>
                             <div className="desc">
@@ -96,7 +96,7 @@ function Resume() {
                             <div className="title">{educations.title}</div>
                             <div className="date">{educations.date}</div>
                             <div className="university">
-                                <FaSuperpowers color={variabels.emerald} />
+                                <FaSuperpowers color={colors.emerald} />
                                 <span>{educations.university}</span>
                             </div>
                         </div>

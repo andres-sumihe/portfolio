@@ -1,5 +1,5 @@
 import { CgScrollV } from "react-icons/cg";
-import variables from "../../../styles/variables.module.scss";
+import { colors } from "../../../data/colors";
 
 export default function Home() {
 
@@ -12,7 +12,7 @@ export default function Home() {
             </div>
 
             <div className="absolute bottom-0 mb-10">
-                <CgScrollV className="heartbeat" size={48} color={variables.aliceBlue} />
+                <CgScrollV className="heartbeat" size={48} color={colors.aliceBlue} />
             </div>
 
         </section>
